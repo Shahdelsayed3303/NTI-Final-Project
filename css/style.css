@@ -1,0 +1,259 @@
+header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+    url("../img/hero_bg_2.jpg");
+  background-size: 105% auto;  
+  background-position: right center;
+  height: 100vh;
+
+  animation: bgMove 15s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  from {
+    background-position: right center;
+  }
+  to {
+    background-position: left center;
+  }
+}
+.home {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+    url("../img/hero_bg_1.jpg");
+  background-size: 105% auto;  
+  background-position: right center;
+  height: 100vh;
+
+  animation: bgMove 15s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  from {
+    background-position: right center;
+  }
+  to {
+    background-position: left center;
+  }
+}
+
+
+.nav-item a {
+  position: relative;
+  display: inline-block;
+}
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.8s ease;
+}
+.nav-item a:hover::after {
+  width: 100%;
+}
+.nav-d {
+  background-color: #0056557c;
+  transition: 1s;
+}
+.d1 {
+  margin-top: 25vh;
+}
+.d1 button,
+button {
+  background-color: #005655;
+  transition: 1s;
+}
+button:hover {
+  opacity: 70%;
+  transform: scale(1.05);
+}
+.slide1 {
+  transition: 1s;
+}
+.i5 {
+  max-height: 200px;
+  width: 100%;
+  transition: 1s;
+}
+.i5:hover {
+  opacity: 80%;
+}
+.slide1:hover {
+  transform: translateY(-15px);
+}
+.carousel-indicators .active {
+  background-color: #005655 !important;
+}
+.carousel-indicators .b1 {
+  color: #00565583 !important;
+}
+input {
+  outline: none;
+}
+.i2 {
+  font-size: 35px;
+}
+.sec1-1-d {
+  transition: 1.5s;
+}
+.sec1-1-d:hover {
+  transform: translate(10px, -10px);
+  box-shadow: -4px 4px 4px 2px rgba(104, 100, 100, 0.678);
+}
+.p1 {
+  color: #005655;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+  border-bottom: 3px solid #005655;
+  padding-bottom: 5px;
+}
+.d2,
+.p2 {
+  color: #7e7e7e;
+}
+.p3 {
+  font-weight: bold;
+  color: black;
+  font-size: 27px;
+}
+.b1 {
+  background-color: #c9cdd8;
+  color: #0e3377;
+}
+.sec-1,
+.sec-2 {
+  background-color: #f3f4f6;
+}
+.p4 {
+  color: #005655;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  border-bottom: 3px solid #005655;
+  padding-bottom: 5px;
+}
+.img1,
+.img2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.icon {
+  color: rgb(255, 187, 0);
+}
+h4 {
+  color: #001f4b;
+}
+.d-icon {
+  background-color: #c9cdd8;
+}
+.d-icon,
+.d-icon-1,
+.d-icon-2,
+.d-icon-3 {
+  width: 45px !important;
+  height: 45px;
+}
+.d-icon,
+.d-icon-1,
+.d-icon-3 {
+  border-radius: 50%;
+}
+.pos-d {
+  animation-name: movement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes movement {
+  from {
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+.img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.pos-d1 {
+  position: relative;
+  z-index: 2;
+  border-radius: 50px 0 50px 0;
+}
+
+.pos-d2 {
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  z-index: 1;
+  border-radius: 50px 0 50px 0;
+}
+.slide2 {
+  transition: 0.5s;
+}
+.icon-s {
+  transition: 1s;
+}
+.icon-s:hover{
+  transform: scale(1.2);
+  opacity: 50%;
+}
+.slide2:hover {
+  transform: translateY(-15px);
+}
+.img2 {
+  transform: translateY(-50px);
+}
+.d-icon-1,
+.d-icon-3 {
+  background-color: #001f4b;
+  transition: 1s;
+}
+.d-icon-1:hover,
+.d-icon-3:hover {
+  transform: rotate(360deg);
+}
+.d-icon-1 i,
+.d-icon-3 i {
+  color: white;
+  font-size: 25px;
+}
+.d-icon-2 i {
+  color: #999999;
+}
+
+.d-icon-2 {
+  background-color: #cccccc;
+  border-radius: 15px;
+  transition: 1s;
+}
+.d-icon-2:hover {
+  background-color: #001f4b;
+}
+.f-d{
+  transition: 1.5s;
+}
+.f-d:hover{
+  transform: scale(1.1);
+  box-shadow: -3px 3px 10px  rgba(104, 100, 100, 0.678);
+}
+footer {
+  background-color: #efefef;
+}
+#btn{
+    border:none;
+    width: 35px;
+    height: 35px;
+    background-color: #001f4b;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+

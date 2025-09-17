@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="home mb-5">
+      <nav class="navbar-expand-lg navbar px-3 py-3">
+        <div class="nav-d container justify-content-between rounded-3 py-1">
+          <h1 class="text-white">Property</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Properties
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#Services">Services</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#footer">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="d1 flex-column col-10 col-md-8 col-lg-7 mx-auto justify-content-center"
+      >
+        <h1 class="text-white text-center col-md-12 my-4 fs-1">Contact Us</h1>
+        <p class="text-white text-center fs-4">
+          Home / <span class="s1 opacity-50">Contact</span>
+        </p>
+      </div>
+    </header>
+    <section class="container" id="Services">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 col-lg-4 mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <div
+              class="d-icon-3 justify-content-center align-items-center d-flex mx-3"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p class="mb-0">43 Raymouth Rd London 3910</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div
+              class="d-icon-3 justify-content-center align-items-center d-flex mx-3"
+            >
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <h4>Open Hours</h4>
+              <p class="mb-0">Mon-Sat: 8AM - 8PM</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div
+              class="d-icon-3 justify-content-center align-items-center d-flex mx-3"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p class="mb-0">info@example.com</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-5">
+            <div
+              class="d-icon-3 justify-content-center align-items-center d-flex mx-3"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p class="mb-0">+1 5589 55488 55</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-7 col-lg-7 mb-4">
+          <form
+            action="https://formsubmit.co/shahdelsayed3303@gmail.com"
+            method="POST"
+            id="contact-form"
+            class="text-capitalize bg-white p-3  rounded-5"
+          >
+            <div class="row mb-3">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <input
+                  id="userName"
+                  type="text"
+                  name="userName"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+                <span class="text-danger fw-medium ms-2"></span>
+              </div>
+              <div class="col-md-6 mb-3 mb-md-0">
+                <input
+                id="phoneNumber"
+                class="form-control"
+                type="number"
+                name="phoneNumber"
+                />
+                <span class="text-danger fw-medium ms-2"></span>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Your Email"
+                required
+              />
+              <span class="text-danger fw-medium ms-2"></span>
+            </div>
+            <!-- Message -->
+            <div class="mb-3">
+              <textarea
+                id="massage"
+                rows="5"
+                name="massage"
+                class="form-control"
+                placeholder="Message"
+                required
+              ></textarea>
+              <span class="text-danger fw-medium ms-2"></span>
+            </div>
+            <!-- Submit -->
+            <button
+              type="submit"
+              class="text-white rounded-5 border-0 px-3 py-2"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="py-4" id="footer">
+      <div
+        class="d4 d-flex col-sm-12 mx-auto text-center mt-5 justify-content-evenly flex-wrap"
+      >
+        <div class="text-center col-5 col-md-2">
+          <h4>Contact</h4>
+          <p class="lead">43 Raymouth Rd. latterncer London 3910</p>
+          <p class="text-decoration-underline lead">+10123-456-7800</p>
+          <p class="text-decoration-underline lead">+10123-456-7800</p>
+          <p class="text-decoration-underline">
+            <a class="text-dark" href="info@mydomain.com" target="_blank">
+              info@mydomain.com</a
+            >
+          </p>
+        </div>
+        <div class="text-center col-5 col-md-2">
+          <h4>Sources</h4>
+          <p class="text-decoration-underline lead">About Us</p>
+          <p class="text-decoration-underline lead">Servecies</p>
+          <p class="text-decoration-underline lead">Vision</p>
+          <p class="text-decoration-underline lead">Mission</p>
+          <p class="text-decoration-underline lead">Terms</p>
+          <p class="text-decoration-underline lead">Privacy</p>
+        </div>
+        <div class="text-center col-5 col-md-2 pt-sm-4 pt-md-0">
+          <h4 class="visual">under updating</h4>
+          <p class="text-decoration-underline lead">Partener</p>
+          <p class="text-decoration-underline lead">Business</p>
+          <p class="text-decoration-underline lead">Career</p>
+          <p class="text-decoration-underline lead">Blog</p>
+          <p class="text-decoration-underline lead">FAQ</p>
+          <p class="text-decoration-underline lead">Creative</p>
+        </div>
+        <div class="text-center col-5 col-md-2 pt-sm-4 pt-md-0">
+          <h4>Links</h4>
+          <p class="text-decoration-underline lead">Our Vision</p>
+          <p class="text-decoration-underline lead">About Us</p>
+          <p class="text-decoration-underline lead">Contact Us</p>
+          <div class="d-flex justify-content-center">
+            <div
+              class="d-icon-2 row justify-content-center align-items-center mx-1"
+            >
+              <a href="http://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div
+              class="d-icon-2 row justify-content-center align-items-center mx-1"
+            >
+              <a href="http://linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div
+              class="d-icon-2 row justify-content-center align-items-center mx-1"
+            >
+              <a href="https://www.google.com/" target="_blank">
+                <i class="fa-brands fa-google"></i>
+              </a>
+            </div>
+            <div
+              class="d-icon-2 row justify-content-center align-items-center mx-1"
+            >
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 text-center col-8 mx-auto">
+        <p>
+          Copyright © 2025. All Rights Reserved. Designed with love by
+          Untree.co<br />
+          Distributed by themewagon
+        </p>
+      </div>
+    </footer>
+    <div
+      id="btn"
+      class="text-white justify-content-center d-flex align-items-center"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
